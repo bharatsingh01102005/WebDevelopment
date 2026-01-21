@@ -1,0 +1,67 @@
+div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    /* margin: 2px; */
+}
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* static poistion */
+/* #static #middle{
+  position: static;
+  top: 100px;
+  left: 100px;
+  right: 100px;
+} */
+
+  /* no one property cannot be apply due to sattaic */
+
+
+/* relative poisition */
+
+/* #relative #middle{
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+} */
+/* absolute position */
+/* #absolute{
+    position: relative;
+    border: 2px solid black;
+}
+
+#absolute #middle{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+} */
+/* fiexed position */
+
+/* #fixed{
+    position: relative;
+    border: 2px solid black;
+
+}
+#fixed #middle{
+position: fixed;
+top: 100;
+} */
+
+
+
+
+/* Sticky Position of two mixere relative and fix depends upon parent height width
+and the offsest lega acording to view port  */
+#sticky{
+    height: 700px;
+}
+#sticky #middle{
+    position: sticky;
+    top: 100px;
+    left: 100px;
+}

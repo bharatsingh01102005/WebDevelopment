@@ -1,0 +1,91 @@
+/* General Page */
+.bd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c1c1c;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+#container {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 12px 12px 25px #141414,
+              -12px -12px 25px #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input with Cyan 3D Border */
+input {
+  background-color: #111;
+  border: 3px solid cyan;
+  outline: none;
+  font-size: 42px;
+  color: white;
+  padding: 15px 20px;
+  text-align: right;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 356px;   /* ✅ same width as grid */
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.8),
+              inset -4px -4px 8px rgba(0,255,255,0.4),
+              0px 6px 12px rgba(0,255,255,0.3),
+              0px -6px 12px rgba(0,255,255,0.2);
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 12px;
+}
+
+/* Common Button Styles */
+button {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+  font-size: 22px;
+  color: white;
+  background: #2d2d2d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.7),
+              -6px -6px 12px rgba(70,70,70,0.3);
+}
+
+/* Hover Effect (just glow, no press) */
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* Click Effect (button pressed look) */
+button:active {
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.6),
+              inset -4px -4px 8px rgba(70,70,70,0.3);
+}
+
+/* Special Buttons */
+.yellow-button {
+  background: #ff9500;
+  color: white;
+}
+
+.gray-button {
+  background: #9e9e9e;
+  color: black;
+}
+
+.zero {
+  grid-column: span 2;
+  width: 174px;
+  border-radius: 20px;
+}
+
+

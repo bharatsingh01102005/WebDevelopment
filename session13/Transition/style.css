@@ -1,0 +1,16 @@
+div{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    /* transition: 5s; */
+    transition-duration: 3s;
+    /* transition-delay: 3s;  */
+    transition-property: border-radius;
+
+
+}
+div:hover{
+    background-color: blue;
+    border-radius: 40%;
+}

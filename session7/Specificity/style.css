@@ -1,0 +1,41 @@
+#sam{
+    color: red;
+
+}
+
+.sams{
+    color: gray;
+}
+
+div{
+    color: aqua;
+}
+/* .live{
+    font-size: 50px;
+} */
+#batch{
+    background-color: azure;
+}
+/* aap classes ek saath de sakte hai id nahi de sakte ho kyuki vo uniqe hoti hai */
+
+/* 
+div{
+    color: red;
+}
+div{
+    color: orange;
+} */
+
+ol{
+    font-size: 40px;
+    color: cyan;
+    border: 2px;
+    padding: auto;
+    /* isse khate hai inheritance */
+}
+ol>li{
+    color: red;
+    font-size: 60px;
+    border: 3pxsolid black;
+    background-color: brown;
+}

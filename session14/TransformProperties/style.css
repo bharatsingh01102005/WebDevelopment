@@ -1,0 +1,28 @@
+h1{
+    font-size: 40px;
+    color: rgb(51, 19, 133);
+    transition: 2s;
+    margin-left: 500px;
+text-shadow:
+  1px 1px 0 #ccc,
+  2px 2px 0 #bbb,
+  3px 3px 0 #aaa,
+  4px 4px 0 #999;
+
+}
+h1:hover{
+    /* transform: translateX(400px); */
+     /* transform: translateX(-400px); */
+     /* transform: translateY(400px); */
+      /* transform: translateZ(400px); */
+      /* transform: rotateX(180deg); */
+      /* transform: rotateY(180deg); */
+      /* transform: rotateZ(180deg); */
+      /* transform: scaleX(2); */
+      /* transform: scale(1.5,1.5); */
+      /* transform: skew(20deg); */
+       /* transform: skewX(20deg); */
+        /* transform: skewY(20deg); */
+      /* transform: skew(10deg,10deg); */
+    
+}

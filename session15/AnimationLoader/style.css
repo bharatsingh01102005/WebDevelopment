@@ -1,0 +1,43 @@
+.box, .box2{
+    width: 100px;
+    height: 100px;
+    /* background-color: cornflowerblue; */
+    border-top: 12px solid rgb(240, 30, 30);
+    border-bottom: 12px solid rgb(234, 234, 15);
+    border-left: 12px solid rgb(29, 172, 46);
+    border-right: 12px solid rgb(30, 145, 198);
+    margin: 30px auto;
+
+    border-radius: 50%;
+}
+.box:hover , .box2:hover{
+    animation-name: loader, backgroundchange;
+    animation-duration: 2s,0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes loader{
+    0%{
+        transform:translateY(0px) rotate(0deg);
+        
+    }
+    50%{
+        transform:translateY(600px) rotate(180deg);
+    }
+    100%{
+        transform:translateY(0) rotate(360deg);
+    }
+    
+}
+@keyframes backgroundchange{
+    0%{
+        background-color: rgb(50, 60, 205);
+    }
+    50%{
+        background-color: rgb(32, 26, 122);
+    }
+    100%{
+         background-color: rgb(64, 88, 15);
+    }
+    
+}

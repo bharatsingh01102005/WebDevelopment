@@ -1,0 +1,28 @@
+.box{
+    background-color: aliceblue;
+    height: 400px;
+    width: 400px;
+     border: 50px dashed blue;
+    /* border-top: 5px dashed blue; */
+    /* margin: 80px; */
+    /* margin-left: 110px;
+    margin-bottom: 110px;
+    margin-top: 110px; */
+    /* top >right>bottom left */
+    /* margin: 120;
+    margin: 20;
+    margin: 42;
+    margin: 320; */
+    /* margin: 100px; */
+    /* margin: 50px 100px; */
+    margin: 50px 70px 100px;
+
+    /* padding */
+    /* padding: 50px; */
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    /* this property apllicable on block elements */
+
+}

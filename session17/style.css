@@ -1,0 +1,11 @@
+.bluebackground{
+    background-color: blue;
+}
+
+main img{
+    height: 400px;
+}
+
+.row .col-xl-2{
+    display: flex;
+}

@@ -1,0 +1,42 @@
+/* absolute unit */
+/* #abs{
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    
+} */
+
+/* relative unit */
+/* % percentage */
+/* .a1 p{
+    font-size: 50%;
+}
+
+.a1{
+    font-size: 200px;
+} */
+
+/* for em */
+/* .fs{
+    font-size: 20px;
+}
+ul li{
+    font-size: 2em;
+} */
+
+
+/* for rem  isme root elements hota hai jaise html ka default size lelga ye*/
+/* .fs{
+    font-size: 20px;
+}
+ul li{
+    font-size: 2rem;
+} */
+
+
+/* vh = view height view means view ports for diffrent system */
+#pyara{
+   width: 50vw;
+   height: 50vh;
+   background-color: skyblue;
+}

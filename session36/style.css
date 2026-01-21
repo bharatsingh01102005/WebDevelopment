@@ -1,0 +1,21 @@
+/* .first{
+    color: cyan;
+}
+.second{
+    
+    background-color:red ;
+}
+.third{
+    border: 2px solid  yellow
+}
+.sam{
+    font-size: 40px;
+} */
+
+
+#container{
+  
+    background-color: cyan;
+    width: 100px;
+    height: 100px;
+}

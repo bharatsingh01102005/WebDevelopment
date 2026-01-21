@@ -1,0 +1,44 @@
+/* element selctor */
+/* li{
+    background-color: brown;
+}
+div{
+    border: 3px solid;
+}
+
+p{
+    font-size: 50px;
+
+} */
+/* ID Selector */
+/* #sam{
+background-color: bisque;
+}
+
+#special{
+    background-color: aquamarine;
+    font-size: 50px;
+} */
+
+/* class selector */
+/* .sachin{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+/* Attributes Selectors */
+a[href='http://goole.com']{
+    font-size: 40px;
+    background-color: cadetblue;
+}
+input[type="text"]{
+    border: 3px dashed orchid;
+}
+
+/* Universal Selectors */
+
+*{
+    border: 1px solid gold;
+}
+body{
+    border: 20px  solid darkblue;
+}

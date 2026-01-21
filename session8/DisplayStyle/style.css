@@ -1,0 +1,33 @@
+/* h3{
+    display: inline;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+} */
+
+
+
+/* Display-Inline block */
+/* h3{
+
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    display: inline-block;
+}
+span{
+display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 34, 255);
+} */
+
+div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+div:nth-of-type(2){
+    /* display: none;; */
+    visibility: hidden;
+}

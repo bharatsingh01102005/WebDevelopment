@@ -1,0 +1,37 @@
+div::first-letter{
+    font-size: 50px;
+    color: orange;
+}
+
+/* ye sirf block par chalti hai inline par nahi isliye span pr kaam nahi karegi kyuki span inline element hai */
+/* span::first-letter{
+    font-size: 100;
+    color: green;
+} */
+ /* p::first-line{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    size: 50px;
+} */
+
+
+
+/* 
+a[href="http://google.com"]::first-letter{
+    color: red;
+    size:100px
+} */
+
+
+/* 
+a[href="http://google.com"]::after{
+    content: "   hi am your sudo element";
+} */
+
+
+a[href="http://google.com"]::before{
+    content: '\1F4F1';
+    font-size: 100px;
+}
+a[href="http://google.com"]{
+    text-decoration: none;
+}

@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  background: #f4f5f7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=40') center/cover no-repeat;
+  padding: 36px 0 30px;
+  text-align: center;
+}
+header h1 {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.24);
+}
+
+main {
+  max-width: 800px;
+  margin: 36px auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 38px 36px;
+
+  /* 3D Cyan Border */
+  border: 4px solid rgb(147, 221, 221);
+  box-shadow: 
+    6px 6px 15px rgba(0, 0, 0, 0.3),       /* outer shadow */
+    -6px -6px 15px rgba(0, 255, 255, 0.3); /* cyan highlight */
+}
+
+/* 3D cyan border for all inputs */
+input[type="text"],
+input[type="date"] {
+  border: 3px solid rgb(113, 158, 125);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  box-shadow: inset 2px 2px 4px rgba(22, 102, 102, 0.5),
+              inset -2px -2px 4px rgba(0, 180, 180, 0.5),
+              2px 2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  box-shadow: inset 2px 2px 4px #5b7e7eb3,
+              inset -2px -2px 4px rgba(0, 180, 180, 0.7),
+              3px 3px 8px rgba(0, 0, 0, 0.3);
+  border-color: #6c6ca1;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 26px;
+}
+.tabs button {
+  padding: 12px 38px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  background: #e0e5df;
+  color: #21282b;
+  border-radius: 6px 6px 0 0;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.tabs button.active,
+.tabs button:focus {
+  background: #294b29;
+  color: #fff;
+  font-weight: 600;
+}
+.tabs button:last-child {
+  margin-right: 0;
+}
+
+.add-task {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 24px;
+}
+.add-task input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #b6b6bb;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.add-task input[type="date"] {
+  padding: 8px 6px;
+  border: 1px solid #b6b6bb;
+  border-radius: 5px;
+}
+.add-task button {
+  background: #294b29;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+.add-task button:hover {
+  background: #365c33;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-card {
+  background: #fafbfa;
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 7px 0 rgba(44,67,51,0.08);
+  justify-content: space-between;
+  transition: box-shadow 0.18s;
+}
+.task-card:hover {
+  box-shadow: 0 4px 15px 2px rgba(41, 75, 41, 0.13);
+}
+
+.task-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.status-dot.today { background: #294b29; }
+.status-dot.pending { background: #bed680; }
+.status-dot.overdue { background: #b33030; }
+.status-dot.completed { background: #8bd59e; border: 2px solid #294b29;}
+.task-title {
+  font-size: 1.07rem;
+  font-weight: 500;
+  margin-right: 12px;
+}
+.task-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.task-date {
+  color: #6d7c7b;
+  font-size: 0.99rem;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 7px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.18s;
+}
+.task-actions button:hover {
+  background: #ececec;
+}
+
+button.complete-btn {
+  color: #256d29;
+  font-weight: bold;
+}
+button.delete-btn {
+  color: #b33030;
+  font-weight: bold;
+}
+.tabs button:hover{
+    scale: 1.25;
+    /* opacity: 0.8;; */
+    background-color: #78a878;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #9ea9a9); /* soft gradient */
+}
+
+main {
+  background: #636d63;   /* very soft cyan-white */
+  border: 4px solid rgb(68, 201, 201);
+  border-radius: 14px;
+  padding: 38px 36px;
+  box-shadow: 
+    6px 6px 15px rgba(0, 0, 0, 0.25),       /* soft depth */
+    -6px -6px 15px rgba(72, 142, 142, 0.2); /* cyan highlight */
+}

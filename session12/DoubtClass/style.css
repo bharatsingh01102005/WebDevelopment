@@ -1,0 +1,65 @@
+/* body{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+
+} */
+
+/* @media print {
+    body{
+        background-color: red;
+    }
+    
+}
+h2{
+    width: 20%;
+} */
+
+
+/* @media screen and (max-width:800px){
+    body{
+        background-color: aquamarine;
+    }
+    
+} */
+/* 
+@media screen and (min-width:200px){
+    body{
+        background-color: aquamarine;
+    }
+    
+} */
+
+
+/* @media screen and (max-width:900px){
+    body{
+        background-color: aquamarine;
+    }
+    
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(165, 127, 255);
+    }
+    
+} */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 90vw;
+    height: 90vh;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 100px 100px 100px;
+
+}
+
+.item {
+    background-color: blueviolet;
+    border: 2px solid black;
+}

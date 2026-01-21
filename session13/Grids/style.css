@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    width: 90vw;
+    height: 90vh;
+    background-color: rgb(196, 255, 212);
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 50px 100px 150px;
+    /* grid-auto-rows: 50px;
+    grid-auto-columns: 88px; */
+    /* grid-auto-flow: row; */
+    grid-auto-flow: column;
+}
+.child{
+    background-color: darkcyan;
+    border: 1px solid black;
+}
+/* #sam{
+    background-color: red;
+    grid-column: span 2;
+}
+#samarth{
+    background-color: pink;
+    grid-row: span 2;
+} */
+ #sam{
+    background-color: red;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    /* grid-column: 3/5 isse ese bhi likh sakte hai; */
+}
+#samarth{
+    background-color: pink;
+    grid-row-start: span 2;
+    grid-row-end: 4;
+}

@@ -1,0 +1,24 @@
+section>div>p{
+    color: blue;
+}
+/* 
+section>section>p{   
+    color: red; isme ek hi level niche jaa sakte hai usse niche nahi jaa sakte hai
+} */
+
+
+/* Adjacent siblings ko puls ke sign se likhte hai */
+/* article+section{
+    background-color: purple;
+} */
+/* section+article{
+    color: yellow;
+} */
+
+
+
+/* General Siblings  */
+section~article{
+    color: yellow;
+}
+
