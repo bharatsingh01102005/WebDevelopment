@@ -1,5 +1,4 @@
  let cat = ()=>{
     console.log('meooow meoow')
 }
-
-Mexports
+module.exports = cat // function

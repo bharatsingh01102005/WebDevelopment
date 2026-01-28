@@ -1,2 +1,0 @@
-
-const ani = require('./animals') 
