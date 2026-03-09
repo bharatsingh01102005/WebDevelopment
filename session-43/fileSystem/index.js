@@ -49,7 +49,10 @@ let data = 'neha mam data send kar rahi hai'
 
 //DELETE 
 
-fs.unlink('abc.txt',(err)=>{
-    if(err){throw err }
-    console.log("mera naam kaalu badmash hai maine delte kar diya")
-})
+// fs.unlink('abc.txt',(err)=>{
+//     if(err){throw err }
+//     console.log("mera naam kaalu badmash hai maine delte kar diya")
+// })
+
+//OR
+fs.unlinkSync('abc.txt')
