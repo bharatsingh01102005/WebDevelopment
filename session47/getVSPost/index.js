@@ -8,6 +8,7 @@ app.use(express.static(path.join(__dirname,'public'))); // static files
 
 app.use(express.urlencoded({ extended: true })) // middleware to get the form data
 
+app.use(express.json()); //middle ware for json data
 
 app.get('/',(req,res)=>{
     res.render('index');
