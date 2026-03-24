@@ -15,6 +15,14 @@
         <h2>Name is: <%=i.username %> </h2>
         <h4>Comment is: <%=i.comment %> </h4>
         <a href="/blogs/<%=i.id %>">Show </a>
+        <br>
+        <a href="/blogs/<%=i.id %>/edit">Edit </a>
+
+        <br>
+
+        <form action="/blogs/<%=i.id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete </button></form>
+        
     </div>
         
    <% } %> 

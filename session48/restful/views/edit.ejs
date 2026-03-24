@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Blog</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>form for Editing a blogs</legend>
+
+      <form action="/blogs/<%= foundComments.id %>?_method=PATCH" method="POST">
+        <label for="username">UserName:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          value="<%= foundComments.username %>"
+        />
+
+        <br />
+
+        <label for="comment">Comment:</label>
+        <input
+          type="text"
+          name="comment"
+          id="comment"
+          value="<%= foundComments.comment %>"
+        />
+
+        <br />
+
+        <button type="submit">Edit Comment</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
