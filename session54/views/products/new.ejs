@@ -1,0 +1,41 @@
+<% layout('/layouts/boilerplate') %>
+<%- include('../partials/navbar') %>
+
+
+  <div class="row">
+    <div class="col-6 mx-auto" ></div>
+  </div>
+
+  
+
+<form action="/products" method="POST">
+    <div class="mb-3">
+         <label for="naam">Name:</label>
+    <input type="text" class="form-contol" name="name" id="naam" placeholder="Name of the products">
+    </div>
+
+     
+
+     <div class="mb-3">
+         <label for="img">Image:</label>
+    <input type="text" class="form-contol" name="img" id="img" placeholder="iamge url the products">
+    </div>
+
+    <div class="mb-3">
+         <label for="pisa">Price:</label>
+    <input type="number" class="form-contol" name="price" id="paisa" placeholder="Price of the products">
+    </div>
+
+    <div class="mb-3">
+         <label for="desc">Description:</label>
+         <textarea name="desc" id="desc"  rows="5" placeholder="Description of the product "></textarea>
+   
+    </div>
+
+    <button class="btn btn-sm btn-success">Add Product</button>
+   
+</form>
+
+    </body>
+
+    </html>
