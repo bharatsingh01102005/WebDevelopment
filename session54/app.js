@@ -4,6 +4,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const seedDB = require('./seed')
 const productRoutes = require('./routes/product')
+const reviewRoutes = require('./routes/review');
 const methodOverride = require('method-override');
 
 const ejsMate = require('ejs-mate');
@@ -35,6 +36,7 @@ app.use(methodOverride('_method'));
 // seedDB();
 
 app.use(productRoutes); // so har incoming ke liye path check kiya  jaaye  
+app.use(reviewRoutes);
 
 // ✅ ONLY FIX (add this)
 app.listen(8080, ()=>{

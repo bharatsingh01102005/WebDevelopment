@@ -31,7 +31,7 @@ router.post('/products',async(req,res)=>{
 // to show paticular products
  router.get('/products/:id',async(req,res)=>{
     let {id} = req.params;
-    let foundProduct = await Product.findById(id);
+    let foundProduct = await Product.findById(id).populate('reviews');
     res.render('products/show',{foundProduct})
  })
 
@@ -53,6 +53,10 @@ router.post('/products',async(req,res)=>{
  // to delete the product
  router.delete('/products/:id',async(req,res)=>{
     let {id} = req.params;
+    const product = await Product.findById(id);
+    for(let review of product.reviews){ 
+         await Review.findByIdAndDelete(review);
+    }
     await Product.findByIdAndDelete(id);
     res.redirect('/products');
  })
