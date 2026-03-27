@@ -3,9 +3,12 @@ const express = require('express');
 const router = express.Router() // mini istance 
 const Review = require('../models/Review');
 const Product = require('../models/Product');
+const {validateReview} = require('../middleware');
 
-router.post('/products/:id/review', async(req, res) => {
-    let {id} = req.params;
+router.post('/products/:id/review', validateReview, async(req, res) => {
+
+    try{
+        let {id} = req.params;
     let {rating, comment} = req.body;
     const product=await Product.findById(id)
     const review = new Review({rating, comment});
@@ -13,6 +16,10 @@ router.post('/products/:id/review', async(req, res) => {
     await review.save();
     await product.save();
     res.redirect(`/products/${id}`);
+    }
+    catch(e){
+        res.status(500).render('error',{err:e.message});
+    }
 })
 
 
