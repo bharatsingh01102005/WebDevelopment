@@ -8,34 +8,78 @@
 
   
 
-<form action="/products" method="POST">
+<form class="needs-validation" action="/products" method="POST" novalidate>
     <div class="mb-3">
          <label for="naam">Name:</label>
-    <input type="text" class="form-contol" name="name" id="naam" placeholder="Name of the products">
+    <input type="text" class="form-contol" name="name" id="naam" placeholder="Name of the products" required>
+     <div class="valid-feedback">
+      Looks good!
     </div>
+    <div class="invalid-feedback">
+        Please enter the name filed.
+      </div>    
+</div>
 
      
 
      <div class="mb-3">
          <label for="img">Image:</label>
-    <input type="text" class="form-contol" name="img" id="img" placeholder="iamge url the products">
+    <input type="text" class="form-contol" name="img" id="img" placeholder="iamge url the products" required>
+     <div class="valid-feedback">
+      Looks good!
     </div>
+    <div class="invalid-feedback">
+        Please enter the image filed.
+      </div>      
+</div>
 
     <div class="mb-3">
          <label for="pisa">Price:</label>
-    <input type="number" class="form-contol" name="price" id="paisa" placeholder="Price of the products">
+    <input type="number" class="form-contol" name="price" id="paisa" placeholder="Price of the products" required>
+    <div class="valid-feedback">
+      Looks good!
     </div>
+    <div class="invalid-feedback">
+        Please enter the price filed.
+      </div>      
+</div>
 
     <div class="mb-3">
          <label for="desc">Description:</label>
-         <textarea name="desc" id="desc"  rows="5" placeholder="Description of the product "></textarea>
-   
+         <textarea name="desc" id="desc"  rows="5" placeholder="Description of the product " required></textarea>
+     <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        Please enter the Description filed.
+      </div>     
     </div>
 
     <button class="btn btn-sm btn-success">Add Product</button>
    
 </form>
 
+
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+// immidiately invoke fucntion iife
+     (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()</script>
     </body>
 
     </html>

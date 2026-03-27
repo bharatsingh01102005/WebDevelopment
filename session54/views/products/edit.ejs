@@ -8,27 +8,45 @@
 
   
 
-<form action="/products/<%=foundProduct._id%>?_method=PATCH" method="POST">
+<form action="/products/<%=foundProduct._id%>?_method=PATCH" method="POST" class="needs-validation" novalidate>
     <div class="mb-3">
          <label for="naam">Name:</label>
-    <input type="text" class="form-contol" name="name" id="naam" placeholder="Name of the products" value="<%=foundProduct.name%>">
+    <input type="text" class="form-contol" name="name" id="naam" placeholder="Name of the products" value="<%=foundProduct.name%>" required>
+ <div class="valid-feedback">
+      Looks good!
     </div>
+    <div class="invalid-feedback">
+        Please enter the Name: filed.
+      </div>    
+</div>
 
      
 
      <div class="mb-3">
          <label for="img">Image:</label>
-    <input type="text" class="form-contol" name="img" id="img" placeholder="iamge url the products" value="<%=foundProduct.img%>">
+    <input type="text" class="form-contol" name="img" id="img" placeholder="iamge url the products" value="<%=foundProduct.img%>" required>
+     <div class="valid-feedback">
+      Looks good!
     </div>
+    <div class="invalid-feedback">
+        Please enter the Images: filed.
+      </div>    
+</div>
 
     <div class="mb-3">
          <label for="pisa">Price:</label>
-    <input type="number" class="form-contol" name="price" id="paisa" placeholder="Price of the products" value="<%=foundProduct.price%>">
+    <input type="number" class="form-contol" name="price" id="paisa" placeholder="Price of the products" value="<%=foundProduct.price%>" required>
+      <div class="valid-feedback">
+      Looks good! 
     </div>
+    <div class="invalid-feedback">
+        Please enter the Price filed.
+      </div>    
+</div>
 
     <div class="mb-3">
          <label for="desc">Description:</label>
-         <textarea name="desc" id="desc"  rows="5" placeholder="Description of the product ">value="<%=foundProduct.desc%>"</textarea>
+         <textarea name="desc" id="desc"  rows="5" placeholder="Description of the product " required>value="<%=foundProduct.desc%>"</textarea>
    
     </div>
 
@@ -36,6 +54,26 @@
    
 </form>
 
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+// immidiately invoke fucntion iife
+     (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()</script>
     </body>
 
     </html>
